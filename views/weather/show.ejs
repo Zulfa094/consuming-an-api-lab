@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Status</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Weather Status</h1>
+      <div>
+        <p>
+          <strong>City:</strong>
+          <%= data.name %>
+        </p>
+        <p>
+          <strong>Temperature:</strong>
+          <%= data.main.temp %> °F
+        </p>
+        <p>
+          <strong>Description:</strong>
+          <%= data.weather[0].description %>
+        </p>
+      </div>
+      <a href="/">Go Back</a>
+    </div>
+  </body>
+</html>
